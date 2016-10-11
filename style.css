@@ -1,4 +1,7 @@
 
+/* CSS pour les titre (h1 & h2)*/
+
+
 .slideshow {
    width: 350px;
    height: 200px;
@@ -15,6 +18,7 @@
 .slideshow li {
    float: left;
 }
+
 h1{
   font-size: 50px;
   text-align: center;
