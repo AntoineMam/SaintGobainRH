@@ -1,43 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- Format de caractères -->
   <meta charset="utf-8"/>
+  <!-- Liens des différents besoins du document-->
   <link rel="stylesheet" href="Assets/Lib/bootstrap-3.3.7-dist/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
   <link rel="stylesheet" href="Assets/Lib/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" media="screen" title="no title" charset="utf-8">
   <link rel="stylesheet" href="Assets/Lib/jquery-ui-1.12.1.custom/jquery-ui.min.css" media="screen" title="no title" charset="utf-8">
   <link rel="stylesheet" href="Assets/Lib/jquery-ui-1.12.1.custom/jquery-ui.theme.min.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="Assets/Lib/Hover-master/css/hover-min.css" media="screen" title="no title" charset="utf-8">
   <script src="Assets/Lib/jquery-3.1.1.min.js"></script>
   <script src="Assets/Lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
   <script src="Assets/Lib/jquery-ui-1.12.1.custom/external/jquery/jquery.js"></script>
+<!-- lien dirigeant vers le fichier d'animation javascript -->
   <script src="script.js"></script>
+  <!-- lien contenant le fichier de style -->
   <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
   <title>Le club RH</title>
 </head>
 <body>
   <div class="container">
     <div class="col-lg-9 col-md-9 col-xs-9">
+      <!--Les balises <h> représentent des titres -->
       <h1>SAINT-GOBAIN</h1>
       <h2>Le Club RH</h2>
-
+      <!-- Les balises <div></div> encadrent les éléments du codage elles contiennes des 'class' qui les renvoient au style -->
       <div class="intro">
         <p>
-          Le club RH se réuni chaque année lors d’un séminaire afin de partager les expériences de chacun. Durant ces deux jours des décision pour l’avenir de chaque branche sera prise pour amélioré les performance de l’entreprise.
+          Le club RH se réunit chaque année lors d’un séminaire afin de partager les expériences de chacun. Durant ces deux jours des décisions pour l’avenir de chaque branche seront prises pour améliorer les performances de l’entreprise.
           Cette année, la Picardie à l’honneur avec les structures de Noyon, et Thourotte lumière.
         </p>
       </div>
-
     </div>
     <div class="col-lg-3 col-md-3 col-xs-3">
+      <!-- La balise <img> permet d'incorporer une image -->
       <img src="Assets/img/logoSaintGobain1.png" alt="logoSaintGobain" height="180px">
     </div>
+    <!-- Les class 'row' et col-... permettent l'organisation du code avec le frameWork (outil) bootstrap afin d'obtenir un code dit 'responsive'
+    celà veut dire qu'il est fonctionnel sur les diférentes tailles d'écrans-->
     <div class="row">
       <div class="col-lg-12 col-md-12 col-xs-12">
         <!-- MENU DE LA PAGE-->
         <ul class="nav nav-pills" id="myTab">
-          <li class="active"><a data-toggle="tab" href="#menu01">Accueil</a></li>
-          <li><a data-toggle="tab" href="#menu02">Ce que j'ai aimé</a></li>
-          <li><a data-toggle="tab" href="#menu03">Ce que je n'ai pas aimé</a></li>
-          <li><a data-toggle="tab" href="#menu04">Mes engagements</a></li>
+          <li class="active hvr-float-shadow"><a data-toggle="tab" href="#menu01">Accueil</a></li>
+          <li class="hvr-float-shadow"><a data-toggle="tab" href="#menu02">Ce que j'ai aimé</a></li>
+          <li class="hvr-float-shadow"><a data-toggle="tab" href="#menu03">Ce que je n'ai pas aimé</a></li>
+          <li class="hvr-float-shadow"><a data-toggle="tab" href="#menu04">Mes engagements</a></li>
         </ul>
       </div>
     </div>
@@ -60,42 +68,51 @@
               <li><img src="Assets/Lib/img/verre1.jpeg" alt="" width="350" height="200" /></li>
             </ul>
           </div>
-          <p>Chez Saint-Gobain, chaque recrutement s’inscrit toujours dans une perspective à long terme. Et bien qu’il soit organisé localement, c’est à l’avenir du Groupe qu’il vous engage à participer.
+          <p class="paragraphe">Chez Saint-Gobain, chaque recrutement s’inscrit toujours dans une perspective à long terme. Et bien qu’il soit organisé localement, c’est à l’avenir du Groupe qu’il vous engage à participer.
             Avec son processus de recrutement, le Groupe Saint-Gobain s’assure de disposer des talents nécessaires à son développement. Il vous permet également de valider vos motivations et vos aptitudes à satisfaire cette ambition.</p>
-        </div>
-        <!--Contenu de j'aime -->
-        <div class="col-lg-8 tab-pane fade" id="menu02">
-          <!-- J'aime -->
-          <h3>Ce que l'on aime</h3>
-          <p>Découverte des différentes équipes terrains du secteur.</p>
-          <p>Motivation des personnels.</p>
-          <p>Importance du numérique et de l’automatisation des systemes.</p>
-        </div>
-        <!--Contenu de j'aime pas-->
-        <div class="col-lg-8 tab-pane fade" id="menu03">
-          <!-- J'aime pas -->
-          <h3>Ce que l'on aime pas</h3>
-          <p>Manque d’espace de travail.</p>
-          <p>Point à ameliorer sur la rapidité de la prise en compte des besoins en personnel.</p>
-        </div>
-        <!--Contenu des engagements -->
-        <div class="col-lg-8 tab-pane fade" id="menu04">
-          <!-- Engagement -->
-          <h3>Nos engagements</h3>
-          <p>Saint-Gobain est une entreprise plus que tricentenaire qui s’est développée dans le respect des personnes et de leur environnement.
-            Les réponses de Saint-Gobain aux enjeux du développement durable sont directement inspirées de ses valeurs, qui sont communes à l’ensemble des collaborateurs : les Principes de Comportement et d’Action. Leur application est une condition d’appartenance à la communauté unie que forme le Groupe.</p>
+          </div>
+          <!--Contenu de j'aime -->
+          <div class="col-lg-8 tab-pane fade" id="menu02">
+            <!-- J'aime -->
+            <h3>Ce que l'on aime</h3>
+            <div class="paragraphe">
+              <p>Découverte des différentes équipes terrains du secteur.</p>
+              <p>Motivation des personnels.</p>
+              <p>Importance du numérique et de l’automatisation des systemes.</p>
+            </div>
+            <img class="center-block" src="Assets/img/BarackUp.jpg" alt="Barack" width="350" height="200"/>
+          </div>
+          <!--Contenu de j'aime pas-->
+          <div class="col-lg-8 tab-pane fade" id="menu03">
+            <!-- J'aime pas -->
+            <h3>Ce que l'on aime pas</h3>
+            <div class="paragraphe">
+              <p>Manque d’espace de travail.</p>
+              <p>Point à ameliorer sur la rapidité de la prise en compte des besoins en personnel.</p>
+            </div>
+            <img class="center-block" src="Assets/img/GladiatorDown.jpg" alt="Barack" width="350" height="200"/>
+          </div>
+          <!--Contenu des engagements -->
+          <div class="col-lg-8 tab-pane fade" id="menu04">
+            <!-- Engagement -->
+            <h3>Nos engagements</h3>
+            <div class="paragraphe">
+              <p>Saint-Gobain est une entreprise plus que tricentenaire qui s’est développée dans le respect des personnes et de leur environnement.
+                Les réponses de Saint-Gobain aux enjeux du développement durable sont directement inspirées de ses valeurs, qui sont communes à l’ensemble des collaborateurs : les Principes de Comportement et d’Action. Leur application est une condition d’appartenance à la communauté unie que forme le Groupe.</p>
+              </div>
+              <img class="center-block" src="Assets/img/engagments.jpg" alt="Barack" width="350" height="200"/>
+            </div>
+          </div>
+          <!--Colonne de droite -->
+          <div class="col-lg-3">
+            <h3>Une décision collective, un engagement réciproque</h3>
+            <p>La stratégie de Saint-Gobain autour de l’habitat durable positionne le Groupe comme une entreprise pleinement inscrite dans son temps et consciente des enjeux auxquels les sociétés font face. Saint-Gobain s’appuie sur des valeurs et des convictions fortes et démontre chaque jour que croissance de ses activités et innovation riment avec éthique et développement durable.</p>
+            <p>Chez Saint-Gobain, chaque recrutement s’inscrit toujours dans une perspective à long terme. Et bien qu’il soit organisé localement, c’est à l’avenir du Groupe qu’il vous engage à participer.
+              Avec son processus de recrutement, le Groupe Saint-Gobain s’assure de disposer des talents nécessaires à son développement. Il vous permet également de valider vos motivations et vos aptitudes à satisfaire cette ambition.</p>
+              <img src="Assets/img/stGobain3.jpg" height="160" width="250">
+            </div>
           </div>
         </div>
-        <!--Colonne de droite -->
-        <div class="col-lg-3">
-          <h3>Une décision collective, un engagement réciproque</h3>
-          <p>La stratégie de Saint-Gobain autour de l’habitat durable positionne le Groupe comme une entreprise pleinement inscrite dans son temps et consciente des enjeux auxquels les sociétés font face. Saint-Gobain s’appuie sur des valeurs et des convictions fortes et démontre chaque jour que croissance de ses activités et innovation riment avec éthique et développement durable.</p>
-          <p>Chez Saint-Gobain, chaque recrutement s’inscrit toujours dans une perspective à long terme. Et bien qu’il soit organisé localement, c’est à l’avenir du Groupe qu’il vous engage à participer.
-            Avec son processus de recrutement, le Groupe Saint-Gobain s’assure de disposer des talents nécessaires à son développement. Il vous permet également de valider vos motivations et vos aptitudes à satisfaire cette ambition.</p>
-            <img src="Assets/img/stGobain3.jpg" alt="logoSaintGobain" height="160px">
-          </div>
-        </div>
-      </div>
 
-    </body>
-    </html>
+      </body>
+      </html>
