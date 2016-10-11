@@ -51,45 +51,45 @@
             <li><img src="Assets/Lib/img/ver2.jpeg" alt="" width="350" height="200" /></li>
             <li><img src="Assets/Lib/img/verre1.jpeg" alt="" width="350" height="200" /></li>
           </ul>
+
+          <script>
+          $(function(){
+            setInterval(function(){
+              $(".slideshow ul").animate({marginLeft:-350},800,function(){
+                $(this).css({marginLeft:0}).find("li:last").after($(this).find("li:first"));
+              })
+            }, 3500);
+          });
+          </script>
         </div>
-        <script>
-        $(function(){
-          setInterval(function(){
-            $(".slideshow ul").animate({marginLeft:-350},800,function(){
-              $(this).css({marginLeft:0}).find("li:last").after($(this).find("li:first"));
-            })
-          }, 3500);
-        });
-        </script>
         <div class="col-lg-8" id="like">
           <!-- J'aime -->
-          <h3>Ce que l'on aime</h3>
+          <h3>Ce que l'on aime.</h3>
           <p>Découverte des différentes équipes terrains du secteur.</p>
           <p>Motivation des personnels.</p>
           <p>Importance du numérique et de l’automatisation des systemes.</p>
         </div>
         <div class="col-lg-8" id="unlike">
           <!-- J'aime pas -->
-          <h3>Ce que l'on aime pas</h3>
+          <h3>Ce que l'on aime pas.</h3>
           <p>Manque d’espace de travail.</p>
           <p>Point à ameliorer sur la rapidité de la prise en compte des besoins en personnel.</p>
         </div>
         <div class="col-lg-8" id="engagement">
           <!-- Engagement -->
           <h3>Nos engagements</h3>
-          <p>Chez Saint-Gobain, chaque recrutement s’inscrit toujours dans une perspective à long terme. Et bien qu’il soit organisé localement, c’est à l’avenir du Groupe qu’il vous engage à participer.
-            Avec son processus de recrutement, le Groupe Saint-Gobain s’assure de disposer des talents nécessaires à son développement. Il vous permet également de valider vos motivations et vos aptitudes à satisfaire cette ambition.</p>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <h3>Une décision collective, un engagement réciproque</h3>
-          <p>Chez Saint-Gobain, chaque recrutement s’inscrit toujours dans une perspective à long terme. Et bien qu’il soit organisé localement, c’est à l’avenir du Groupe qu’il vous engage à participer.
-            Avec son processus de recrutement, le Groupe Saint-Gobain s’assure de disposer des talents nécessaires à son développement. Il vous permet également de valider vos motivations et vos aptitudes à satisfaire cette ambition.</p>
-            <div>
-              <img src="Assets/img/stGobain3.jpg" alt="logoSaintGobain" height="180px">
+          <p>Saint-Gobain est une entreprise plus que tricentenaire qui s’est développée dans le respect des personnes et de leur environnement.
+            Les réponses de Saint-Gobain aux enjeux du développement durable sont directement inspirées de ses valeurs, qui sont communes à l’ensemble des collaborateurs : les Principes de Comportement et d’Action. Leur application est une condition d’appartenance à la communauté unie que forme le Groupe.</p>
+          </div></div>
+          <div class="col-lg-4">
+            <h3>Une décision collective, un engagement réciproque</h3>
+            <p>La stratégie de Saint-Gobain autour de l’habitat durable positionne le Groupe comme une entreprise pleinement inscrite dans son temps et consciente des enjeux auxquels les sociétés font face. Saint-Gobain s’appuie sur des valeurs et des convictions fortes et démontre chaque jour que croissance de ses activités et innovation riment avec éthique et développement durable.</p>
+            <p>Chez Saint-Gobain, chaque recrutement s’inscrit toujours dans une perspective à long terme. Et bien qu’il soit organisé localement, c’est à l’avenir du Groupe qu’il vous engage à participer.
+              Avec son processus de recrutement, le Groupe Saint-Gobain s’assure de disposer des talents nécessaires à son développement. Il vous permet également de valider vos motivations et vos aptitudes à satisfaire cette ambition.</p>
+
+              <img src="Assets/img/stGobain3.jpg" alt="logoSaintGobain" height="160px">
             </div>
           </div>
         </div>
-      </div>
-    </body>
-    </html>
+      </body>
+      </html>
