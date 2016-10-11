@@ -5,7 +5,6 @@
    overflow: hidden;
    border: 3px solid #F2F2F2;
 }
-
 .slideshow ul {
     /* 4 images donc 4 x 100% */
    width: 400%;
