@@ -3,6 +3,12 @@
 <head>
   <meta charset="utf-8"/>
   <link rel="stylesheet" href="Assets/Lib/bootstrap-3.3.7-dist/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="Assets/Lib/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="Assets/Lib/jquery-ui-1.12.1.custom/jquery-ui.min.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="Assets/Lib/jquery-ui-1.12.1.custom/jquery-ui.theme.min.css" media="screen" title="no title" charset="utf-8">
+  <script src="Assets/Lib/jquery-3.1.1.min.js"></script>
+  <script src="Assets/Lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+  <script src="Assets/Lib/jquery-ui-1.12.1.custom/external/jquery/jquery.js"></script>
   <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
   <title>Le club RH</title>
 </head>
@@ -37,7 +43,24 @@
     <div class="row">
       <div class="col-lg-8">
         <!-- CAROUSSEL -->
-
+        <div class="slideshow">
+          <ul>
+            <li><img src="Assets/Lib/img/logoSaintGobain1.png" alt="" width="350" height="200" /></li>
+            <li><img src="Assets/Lib/img/seminaire-rh.png" alt="" width="350" height="200" /></li>
+            <li><img src="Assets/Lib/img/stGob.jpeg" alt="" width="350" height="200" /></li>
+            <li><img src="Assets/Lib/img/ver2.jpeg" alt="" width="350" height="200" /></li>
+            <li><img src="Assets/Lib/img/verre1.jpeg" alt="" width="350" height="200" /></li>
+          </ul>
+        </div>
+        <script>
+        $(function(){
+          setInterval(function(){
+            $(".slideshow ul").animate({marginLeft:-350},800,function(){
+              $(this).css({marginLeft:0}).find("li:last").after($(this).find("li:first"));
+            })
+          }, 3500);
+        });
+        </script>
       </div>
       <div class="col-lg-8" id="like">
         <!-- J'aime -->
@@ -56,17 +79,19 @@
         <!-- Engagement -->
         <h3>Nos engagements.</h3>
         <p>Chez Saint-Gobain, chaque recrutement s’inscrit toujours dans une perspective à long terme. Et bien qu’il soit organisé localement, c’est à l’avenir du Groupe qu’il vous engage à participer.
-Avec son processus de recrutement, le Groupe Saint-Gobain s’assure de disposer des talents nécessaires à son développement. Il vous permet également de valider vos motivations et vos aptitudes à satisfaire cette ambition.</p>
-      </div>
-      <div class="col-lg-4">
-        <h3>Une décision collective, un engagement réciproque</h3>
-        <p>Chez Saint-Gobain, chaque recrutement s’inscrit toujours dans une perspective à long terme. Et bien qu’il soit organisé localement, c’est à l’avenir du Groupe qu’il vous engage à participer.
           Avec son processus de recrutement, le Groupe Saint-Gobain s’assure de disposer des talents nécessaires à son développement. Il vous permet également de valider vos motivations et vos aptitudes à satisfaire cette ambition.</p>
           <div>
             <img src="Assets/img/stGobain3.jpg" alt="logoSaintGobain" height="160px">
+
+        </div>
+        <div class="col-lg-4">
+          <h3>Une décision collective, un engagement réciproque</h3>
+          <p>Chez Saint-Gobain, chaque recrutement s’inscrit toujours dans une perspective à long terme. Et bien qu’il soit organisé localement, c’est à l’avenir du Groupe qu’il vous engage à participer.
+            Avec son processus de recrutement, le Groupe Saint-Gobain s’assure de disposer des talents nécessaires à son développement. Il vous permet également de valider vos motivations et vos aptitudes à satisfaire cette ambition.</p>
+          
+
           </div>
         </div>
       </div>
-    </div>
-  </body>
-  </html>
+    </body>
+    </html>
